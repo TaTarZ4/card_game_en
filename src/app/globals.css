@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-plex-thai), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-paper: #f4efe6;
+  --color-card: #fffdf9;
+  --color-ink: #1d1a16;
+  --color-muted: #5e574d;
+  --color-subtle: #4a443b;
+  --color-line: #e4dccd;
+  --color-line-strong: #d8cebd;
+  --color-chip: #f1eadf;
+  --color-panel: #f7f2e9;
+  --color-back: #1f2b3d;
+  --color-back-muted: #c9d3e3;
+  --color-back-text: #e6ebf3;
+
+  --color-known: #2451b8;
+  --color-known-ink: #1b3f94;
+  --color-known-bg: #e1e8f8;
+  --color-unknown: #b8490f;
+  --color-unknown-ink: #8a3409;
+  --color-unknown-bg: #fbe9dd;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--color-known);
+  outline-offset: 3px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
