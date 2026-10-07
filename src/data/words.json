@@ -3,29 +3,83 @@
     "index": 1,
     "date": "2026-10-01",
     "words": [
-      { "word": "confess", "ipa": "/kənˈfes/", "meaning": "สารภาพ", "partOfSpeech": "verb", "example": "He confessed that he broke the window.", "exampleTh": "เขาสารภาพว่าเขาทำหน้าต่างแตก" },
-      { "word": "neither nor", "ipa": "/ˈniːðər nɔːr/", "meaning": "ไม่ทั้ง...และ...", "partOfSpeech": "conjunction", "example": "Neither my brother nor my sister likes coffee.", "exampleTh": "ทั้งพี่ชายและพี่สาวของฉันไม่มีใครชอบกาแฟ" },
-      { "word": "gamble", "ipa": "/ˈɡæmbəl/", "meaning": "เล่นการพนัน / เสี่ยง", "partOfSpeech": "verb", "example": "He lost all his money because he gambled.", "exampleTh": "เขาเสียเงินทั้งหมดเพราะเล่นการพนัน" },
-      { "word": "drug", "ipa": "/drʌɡ/", "meaning": "ยา / ยาเสพติด", "partOfSpeech": "noun", "example": "This drug helps reduce pain.", "exampleTh": "ยานี้ช่วยลดอาการปวด" },
-      { "word": "crisis", "ipa": "/ˈkraɪsɪs/", "meaning": "วิกฤต", "partOfSpeech": "noun", "example": "The country is facing an economic crisis.", "exampleTh": "ประเทศกำลังเผชิญกับวิกฤตเศรษฐกิจ" },
-      { "word": "complex", "ipa": "/ˈkɑːmpleks/", "meaning": "ซับซ้อน", "partOfSpeech": "adjective", "example": "This math problem is very complex.", "exampleTh": "โจทย์คณิตศาสตร์ข้อนี้ซับซ้อนมาก" },
-      { "word": "depending", "ipa": "/dɪˈpendɪŋ/", "meaning": "ขึ้นอยู่กับ (depending on)", "partOfSpeech": "preposition", "example": "We will go out, depending on the weather.", "exampleTh": "เราจะออกไปข้างนอก ขึ้นอยู่กับสภาพอากาศ" },
-      { "word": "pregnant", "ipa": "/ˈpreɡnənt/", "meaning": "ตั้งครรภ์", "partOfSpeech": "adjective", "example": "My sister is pregnant with her first baby.", "exampleTh": "พี่สาวของฉันกำลังตั้งครรภ์ลูกคนแรก" }
+      { "word": "confess", "ipa": "/kənˈfes/", "readingTh": "คัน-เฟส", "meaning": "สารภาพ", "partOfSpeech": "verb", "example": "He confessed that he broke the window.", "exampleTh": "เขาสารภาพว่าเขาทำหน้าต่างแตก" },
+      { "word": "neither nor", "ipa": "/ˈniːðər nɔːr/", "readingTh": "นี-เธอร์ นอร์", "meaning": "ไม่ทั้ง...และ...", "partOfSpeech": "conjunction", "example": "Neither my brother nor my sister likes coffee.", "exampleTh": "ทั้งพี่ชายและพี่สาวของฉันไม่มีใครชอบกาแฟ" },
+      { "word": "gamble", "ipa": "/ˈɡæmbəl/", "readingTh": "แกม-เบิล", "meaning": "เล่นการพนัน / เสี่ยง", "partOfSpeech": "verb", "example": "He lost all his money because he gambled.", "exampleTh": "เขาเสียเงินทั้งหมดเพราะเล่นการพนัน" },
+      { "word": "drug", "ipa": "/drʌɡ/", "readingTh": "ดรัก", "meaning": "ยา / ยาเสพติด", "partOfSpeech": "noun", "example": "This drug helps reduce pain.", "exampleTh": "ยานี้ช่วยลดอาการปวด" },
+      { "word": "crisis", "ipa": "/ˈkraɪsɪs/", "readingTh": "ไคร-ซิส", "meaning": "วิกฤต", "partOfSpeech": "noun", "example": "The country is facing an economic crisis.", "exampleTh": "ประเทศกำลังเผชิญกับวิกฤตเศรษฐกิจ" },
+      { "word": "complex", "ipa": "/ˈkɑːmpleks/", "readingTh": "คาม-เพล็กซ์", "meaning": "ซับซ้อน", "partOfSpeech": "adjective", "example": "This math problem is very complex.", "exampleTh": "โจทย์คณิตศาสตร์ข้อนี้ซับซ้อนมาก" },
+      { "word": "depending", "ipa": "/dɪˈpendɪŋ/", "readingTh": "ดิ-เพน-ดิ้ง", "meaning": "ขึ้นอยู่กับ (depending on)", "partOfSpeech": "preposition", "example": "We will go out, depending on the weather.", "exampleTh": "เราจะออกไปข้างนอก ขึ้นอยู่กับสภาพอากาศ" },
+      { "word": "pregnant", "ipa": "/ˈpreɡnənt/", "readingTh": "เพร็ก-เนินท์", "meaning": "ตั้งครรภ์", "partOfSpeech": "adjective", "example": "My sister is pregnant with her first baby.", "exampleTh": "พี่สาวของฉันกำลังตั้งครรภ์ลูกคนแรก" }
     ]
   },
   {
     "index": 2,
     "date": "2026-10-02",
     "words": [
-      { "word": "durable", "ipa": "/ˈdʊrəbəl/", "meaning": "ทนทาน", "partOfSpeech": "adjective", "example": "These shoes are very durable.", "exampleTh": "รองเท้าคู่นี้ทนทานมาก" },
-      { "word": "forecaster", "ipa": "/ˈfɔːrkæstər/", "meaning": "ผู้พยากรณ์ (เช่น นักพยากรณ์อากาศ)", "partOfSpeech": "noun", "example": "The weather forecaster said it will rain tomorrow.", "exampleTh": "นักพยากรณ์อากาศบอกว่าพรุ่งนี้ฝนจะตก" },
-      { "word": "resilient", "ipa": "/rɪˈzɪliənt/", "meaning": "ฟื้นตัวได้เร็ว / ยืดหยุ่น ไม่ย่อท้อ", "partOfSpeech": "adjective", "example": "Children are often very resilient.", "exampleTh": "เด็กๆ มักจะฟื้นตัวจากเรื่องร้ายๆ ได้เร็ว" },
-      { "word": "principle", "ipa": "/ˈprɪnsəpəl/", "meaning": "หลักการ", "partOfSpeech": "noun", "example": "Honesty is an important principle in my life.", "exampleTh": "ความซื่อสัตย์เป็นหลักการสำคัญในชีวิตของฉัน" },
-      { "word": "wish", "ipa": "/wɪʃ/", "meaning": "ปรารถนา / อยากให้", "partOfSpeech": "verb", "example": "I wish I could fly.", "exampleTh": "ฉันอยากบินได้จัง" },
-      { "word": "wedding", "ipa": "/ˈwedɪŋ/", "meaning": "งานแต่งงาน", "partOfSpeech": "noun", "example": "We are going to my cousin's wedding next week.", "exampleTh": "เราจะไปงานแต่งงานของลูกพี่ลูกน้องสัปดาห์หน้า" },
-      { "word": "wet", "ipa": "/wet/", "meaning": "เปียก", "partOfSpeech": "adjective", "example": "My clothes got wet in the rain.", "exampleTh": "เสื้อผ้าของฉันเปียกเพราะฝน" },
-      { "word": "usually", "ipa": "/ˈjuːʒuəli/", "meaning": "โดยปกติ / มักจะ", "partOfSpeech": "adverb", "example": "I usually wake up at six.", "exampleTh": "ฉันมักจะตื่นตอนหกโมง" },
-      { "word": "stress", "ipa": "/stres/", "meaning": "ความเครียด", "partOfSpeech": "noun", "example": "Too much work causes stress.", "exampleTh": "งานที่มากเกินไปทำให้เกิดความเครียด" }
+      { "word": "durable", "ipa": "/ˈdʊrəbəl/", "readingTh": "ดัว-ระ-เบิล", "meaning": "ทนทาน", "partOfSpeech": "adjective", "example": "These shoes are very durable.", "exampleTh": "รองเท้าคู่นี้ทนทานมาก" },
+      { "word": "forecaster", "ipa": "/ˈfɔːrkæstər/", "readingTh": "ฟอร์-แคส-เตอร์", "meaning": "ผู้พยากรณ์ (เช่น นักพยากรณ์อากาศ)", "partOfSpeech": "noun", "example": "The weather forecaster said it will rain tomorrow.", "exampleTh": "นักพยากรณ์อากาศบอกว่าพรุ่งนี้ฝนจะตก" },
+      { "word": "resilient", "ipa": "/rɪˈzɪliənt/", "readingTh": "ริ-ซิล-เลียนท์", "meaning": "ฟื้นตัวได้เร็ว / ยืดหยุ่น ไม่ย่อท้อ", "partOfSpeech": "adjective", "example": "Children are often very resilient.", "exampleTh": "เด็กๆ มักจะฟื้นตัวจากเรื่องร้ายๆ ได้เร็ว" },
+      { "word": "principle", "ipa": "/ˈprɪnsəpəl/", "readingTh": "พริน-ซะ-เพิล", "meaning": "หลักการ", "partOfSpeech": "noun", "example": "Honesty is an important principle in my life.", "exampleTh": "ความซื่อสัตย์เป็นหลักการสำคัญในชีวิตของฉัน" },
+      { "word": "wish", "ipa": "/wɪʃ/", "readingTh": "วิช", "meaning": "ปรารถนา / อยากให้", "partOfSpeech": "verb", "example": "I wish I could fly.", "exampleTh": "ฉันอยากบินได้จัง" },
+      { "word": "wedding", "ipa": "/ˈwedɪŋ/", "readingTh": "เวด-ดิ้ง", "meaning": "งานแต่งงาน", "partOfSpeech": "noun", "example": "We are going to my cousin's wedding next week.", "exampleTh": "เราจะไปงานแต่งงานของลูกพี่ลูกน้องสัปดาห์หน้า" },
+      { "word": "wet", "ipa": "/wet/", "readingTh": "เว็ท", "meaning": "เปียก", "partOfSpeech": "adjective", "example": "My clothes got wet in the rain.", "exampleTh": "เสื้อผ้าของฉันเปียกเพราะฝน" },
+      { "word": "usually", "ipa": "/ˈjuːʒuəli/", "readingTh": "ยู-ฉวล-ลี่", "meaning": "โดยปกติ / มักจะ", "partOfSpeech": "adverb", "example": "I usually wake up at six.", "exampleTh": "ฉันมักจะตื่นตอนหกโมง" },
+      { "word": "stress", "ipa": "/stres/", "readingTh": "สเตรส", "meaning": "ความเครียด", "partOfSpeech": "noun", "example": "Too much work causes stress.", "exampleTh": "งานที่มากเกินไปทำให้เกิดความเครียด" }
+    ]
+  },
+  {
+    "index": 3,
+    "date": "2026-10-03",
+    "words": [
+      { "word": "reliable", "ipa": "/rɪˈlaɪəbəl/", "readingTh": "ริ-ไล-อะ-เบิล", "meaning": "เชื่อถือได้ / ไว้ใจได้", "partOfSpeech": "adjective", "example": "She is a reliable friend.", "exampleTh": "เธอเป็นเพื่อนที่ไว้ใจได้" },
+      { "word": "meticulous", "ipa": "/məˈtɪkjələs/", "readingTh": "มะ-ทิค-คิว-เลิส", "meaning": "พิถีพิถัน / ละเอียดรอบคอบ", "partOfSpeech": "adjective", "example": "He is meticulous about his work.", "exampleTh": "เขาพิถีพิถันกับงานของเขามาก" },
+      { "word": "shade", "ipa": "/ʃeɪd/", "readingTh": "เชด", "meaning": "ร่มเงา", "partOfSpeech": "noun", "example": "Let's sit in the shade of that tree.", "exampleTh": "ไปนั่งใต้ร่มเงาต้นไม้ต้นนั้นกันเถอะ" },
+      { "word": "entire", "ipa": "/ɪnˈtaɪər/", "readingTh": "อิน-ไท-เออร์", "meaning": "ทั้งหมด / ทั้ง...", "partOfSpeech": "adjective", "example": "I spent the entire day at home.", "exampleTh": "ฉันอยู่บ้านทั้งวัน" },
+      { "word": "pretty", "ipa": "/ˈprɪti/", "readingTh": "พริท-ตี้", "meaning": "สวย / น่ารัก", "partOfSpeech": "adjective", "example": "She has a pretty smile.", "exampleTh": "เธอมีรอยยิ้มที่น่ารัก" },
+      { "word": "afraid", "ipa": "/əˈfreɪd/", "readingTh": "อะ-เฟรด", "meaning": "กลัว", "partOfSpeech": "adjective", "example": "My little brother is afraid of the dark.", "exampleTh": "น้องชายของฉันกลัวความมืด" },
+      { "word": "behave", "ipa": "/bɪˈheɪv/", "readingTh": "บิ-เฮฟว", "meaning": "ประพฤติตัว / ทำตัวดี", "partOfSpeech": "verb", "example": "Please behave yourself in class.", "exampleTh": "กรุณาทำตัวดีๆ ในห้องเรียน" },
+      { "word": "bin", "ipa": "/bɪn/", "readingTh": "บิน", "meaning": "ถังขยะ / ถัง", "partOfSpeech": "noun", "example": "Put the paper in the bin.", "exampleTh": "ทิ้งกระดาษลงในถังขยะ" },
+      { "word": "blank", "ipa": "/blæŋk/", "readingTh": "แบลงค์", "meaning": "ว่างเปล่า / ไม่มีอะไรเขียน", "partOfSpeech": "adjective", "example": "Write your answer in the blank space.", "exampleTh": "เขียนคำตอบลงในช่องว่าง" }
+    ]
+  },
+  {
+    "index": 4,
+    "date": "2026-10-04",
+    "words": [
+      { "word": "race", "ipa": "/reɪs/", "readingTh": "เรซ", "meaning": "การแข่งขัน (วิ่ง/ความเร็ว)", "partOfSpeech": "noun", "example": "He won the race easily.", "exampleTh": "เขาชนะการแข่งขันได้อย่างง่ายดาย" },
+      { "word": "physical", "ipa": "/ˈfɪzɪkəl/", "readingTh": "ฟิซ-ซิ-เคิล", "meaning": "ทางร่างกาย / ทางกายภาพ", "partOfSpeech": "adjective", "example": "Physical exercise is good for your health.", "exampleTh": "การออกกำลังกายดีต่อสุขภาพของคุณ" },
+      { "word": "therapy", "ipa": "/ˈθerəpi/", "readingTh": "เธอ-ระ-พี", "meaning": "การบำบัด / การรักษา", "partOfSpeech": "noun", "example": "She goes to physical therapy twice a week.", "exampleTh": "เธอไปทำกายภาพบำบัดสัปดาห์ละสองครั้ง" },
+      { "word": "consult", "ipa": "/kənˈsʌlt/", "readingTh": "คัน-ซัลท์", "meaning": "ปรึกษา", "partOfSpeech": "verb", "example": "You should consult a doctor.", "exampleTh": "คุณควรไปปรึกษาแพทย์" },
+      { "word": "borrow", "ipa": "/ˈbɑːroʊ/", "readingTh": "บา-โร", "meaning": "ยืม", "partOfSpeech": "verb", "example": "Can I borrow your pen?", "exampleTh": "ขอยืมปากกาของคุณได้ไหม" },
+      { "word": "approach", "ipa": "/əˈproʊtʃ/", "readingTh": "อะ-โพรช", "meaning": "เข้าใกล้ / วิธีการ", "partOfSpeech": "verb", "example": "The cat slowly approached the bird.", "exampleTh": "แมวค่อยๆ เข้าใกล้นก" },
+      { "word": "within", "ipa": "/wɪˈðɪn/", "readingTh": "วิ-ธิน", "meaning": "ภายใน", "partOfSpeech": "preposition", "example": "Please finish the work within two days.", "exampleTh": "กรุณาทำงานให้เสร็จภายในสองวัน" },
+      { "word": "stimulate", "ipa": "/ˈstɪmjəleɪt/", "readingTh": "สติม-มิว-เลท", "meaning": "กระตุ้น", "partOfSpeech": "verb", "example": "Music can stimulate the brain.", "exampleTh": "ดนตรีสามารถกระตุ้นสมองได้" },
+      { "word": "slump", "ipa": "/slʌmp/", "readingTh": "สลัมพ์", "meaning": "ตกต่ำ / ทรุดลงอย่างรวดเร็ว", "partOfSpeech": "verb", "example": "Sales slumped after the holiday.", "exampleTh": "ยอดขายตกต่ำลงหลังช่วงวันหยุด" }
+    ]
+  },
+  {
+    "index": 5,
+    "date": "2026-10-05",
+    "words": [
+      { "word": "repeat", "ipa": "/rɪˈpiːt/", "readingTh": "ริ-พีท", "meaning": "ทำซ้ำ / พูดซ้ำ", "partOfSpeech": "verb", "example": "Could you repeat that, please?", "exampleTh": "ช่วยพูดอีกครั้งได้ไหม" },
+      { "word": "reach", "ipa": "/riːtʃ/", "readingTh": "รีช", "meaning": "ไปถึง / เอื้อมถึง", "partOfSpeech": "verb", "example": "We reached the hotel at midnight.", "exampleTh": "เราไปถึงโรงแรมตอนเที่ยงคืน" },
+      { "word": "intelligent", "ipa": "/ɪnˈtelɪdʒənt/", "readingTh": "อิน-เทล-ลิ-เจินท์", "meaning": "ฉลาด", "partOfSpeech": "adjective", "example": "Dolphins are very intelligent animals.", "exampleTh": "โลมาเป็นสัตว์ที่ฉลาดมาก" },
+      { "word": "invent", "ipa": "/ɪnˈvent/", "readingTh": "อิน-เวนท์", "meaning": "ประดิษฐ์ / คิดค้น", "partOfSpeech": "verb", "example": "Who invented the telephone?", "exampleTh": "ใครเป็นคนประดิษฐ์โทรศัพท์" },
+      { "word": "meal", "ipa": "/miːl/", "readingTh": "มีล", "meaning": "มื้ออาหาร", "partOfSpeech": "noun", "example": "Breakfast is the most important meal of the day.", "exampleTh": "อาหารเช้าเป็นมื้อที่สำคัญที่สุดของวัน" },
+      { "word": "melt", "ipa": "/melt/", "readingTh": "เมลท์", "meaning": "ละลาย", "partOfSpeech": "verb", "example": "The ice cream melted in the sun.", "exampleTh": "ไอศกรีมละลายกลางแดด" }
+    ]
+  },
+  {
+    "index": 6,
+    "date": "2026-10-06",
+    "words": [
+      { "word": "whether", "ipa": "/ˈweðər/", "readingTh": "เว-เธอร์", "meaning": "ไม่ว่า / หรือไม่", "partOfSpeech": "conjunction", "example": "I don't know whether he will come.", "exampleTh": "ฉันไม่รู้ว่าเขาจะมาหรือไม่" },
+      { "word": "against", "ipa": "/əˈɡenst/", "readingTh": "อะ-เกนซท์", "meaning": "ต่อต้าน / พิง / แข่งกับ", "partOfSpeech": "preposition", "example": "Our team will play against a strong team.", "exampleTh": "ทีมของเราจะแข่งกับทีมที่แข็งแกร่ง" },
+      { "word": "worth", "ipa": "/wɜːrθ/", "readingTh": "เวิร์ธ", "meaning": "คุ้มค่า / มีค่า", "partOfSpeech": "adjective", "example": "This movie is worth watching.", "exampleTh": "หนังเรื่องนี้คุ้มค่าที่จะดู" },
+      { "word": "strict", "ipa": "/strɪkt/", "readingTh": "สตริคท์", "meaning": "เข้มงวด", "partOfSpeech": "adjective", "example": "Our teacher is very strict.", "exampleTh": "ครูของเราเข้มงวดมาก" },
+      { "word": "conflict", "ipa": "/ˈkɑːnflɪkt/", "readingTh": "คอน-ฟลิคท์", "meaning": "ความขัดแย้ง", "partOfSpeech": "noun", "example": "There was a conflict between the two groups.", "exampleTh": "เกิดความขัดแย้งระหว่างสองกลุ่ม" },
+      { "word": "handle", "ipa": "/ˈhændəl/", "readingTh": "แฮน-เดิล", "meaning": "จัดการ / รับมือ", "partOfSpeech": "verb", "example": "She can handle the problem by herself.", "exampleTh": "เธอจัดการปัญหานี้ได้ด้วยตัวเอง" }
     ]
   }
 ]

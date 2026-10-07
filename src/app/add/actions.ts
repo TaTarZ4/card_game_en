@@ -11,6 +11,7 @@ const WORDS_FILE = path.join(process.cwd(), "src", "data", "words.json");
 export type NewWordInput = {
   word: string;
   ipa: string;
+  readingTh: string;
   meaning: string;
   partOfSpeech: string;
   example: string;
@@ -45,6 +46,7 @@ export async function addWords(date: string, inputs: NewWordInput[]): Promise<Ad
     words.push({
       word,
       ipa: optional(input.ipa),
+      readingTh: optional(input.readingTh),
       meaning,
       partOfSpeech: input.partOfSpeech,
       example: optional(input.example),

@@ -6,6 +6,7 @@ export type { PartOfSpeech };
 export type Word = {
   word: string;
   ipa?: string;
+  readingTh?: string; // Thai transliteration, e.g. "แกม-เบิล"
   meaning: string;
   partOfSpeech: PartOfSpeech;
   example?: string;

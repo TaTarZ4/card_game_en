@@ -46,13 +46,23 @@ async function playAudio(word: Word, kind: AudioKind) {
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
 
+// Fisher–Yates shuffle, returns a new array
+function shuffle<T>(list: T[]): T[] {
+  const a = list.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
   const [setIdx, setSetIdx] = useState(0);
   const set = sets[setIdx];
   const nextSet = sets[setIdx + 1];
   const words = set.words;
 
-  const [order, setOrder] = useState(() => range(words.length));
+  const [order, setOrder] = useState(() => shuffle(range(words.length)));
   const [pos, setPos] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [dx, setDx] = useState(0);
@@ -98,7 +108,7 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
 
   function startRound(list: number[]) {
     clearTimeout(timer.current);
-    setOrder(list);
+    setOrder(shuffle(list));
     setPos(0);
     setFlipped(false);
     setDx(0);
@@ -250,6 +260,9 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
                       {word.word}
                     </div>
                     {word.ipa && <div className="text-[17px] text-muted">{word.ipa}</div>}
+                    {word.readingTh && (
+                      <div className="text-lg font-medium text-subtle">{word.readingTh}</div>
+                    )}
                   </div>
                   {word.example && (
                     <div className="flex flex-col gap-2 rounded-2xl bg-panel p-4">
@@ -303,6 +316,9 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
                     <div className="font-serif text-xl text-back-muted">
                       {word.word} · {word.partOfSpeech}
                     </div>
+                    {word.readingTh && (
+                      <div className="text-base text-back-muted">อ่านว่า {word.readingTh}</div>
+                    )}
                   </div>
                   {word.example && (
                     <div className="flex flex-col gap-2 rounded-2xl bg-white/8 p-4">

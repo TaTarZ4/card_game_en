@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Flashcards from "@/components/Flashcards";
+import Flashcards from "@/components/FlashcardsClient";
 import { getReviewSets } from "@/lib/words";
 
 export default function Home() {

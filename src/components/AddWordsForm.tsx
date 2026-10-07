@@ -9,6 +9,7 @@ const INITIAL_ROWS = 5;
 const emptyRow = (): NewWordInput => ({
   word: "",
   ipa: "",
+  readingTh: "",
   meaning: "",
   partOfSpeech: "noun",
   example: "",
@@ -136,6 +137,15 @@ export default function AddWordsForm({
                 value={row.ipa}
                 onChange={(e) => update(i, { ipa: e.target.value })}
                 placeholder="/ˈæpəl/"
+                className={inputClass}
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 sm:col-span-2">
+              <span className={labelClass}>คำอ่านภาษาไทย</span>
+              <input
+                value={row.readingTh}
+                onChange={(e) => update(i, { readingTh: e.target.value })}
+                placeholder="แอป-เปิล"
                 className={inputClass}
               />
             </label>
