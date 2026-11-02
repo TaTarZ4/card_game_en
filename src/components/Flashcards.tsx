@@ -1,60 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { getAudio, type AudioKind } from "@/app/actions";
 import { partOfSpeechTh } from "@/lib/part-of-speech";
-import type { ReviewSet, Word } from "@/lib/words";
+import { playAudio, shuffle } from "@/lib/play-audio";
+import SpellModal from "@/components/SpellModal";
+import type { ReviewSet } from "@/lib/words";
 
 const SWIPE_THRESHOLD = 110;
-const SPEECH_RATE = 0.9;
 
 type Dir = "left" | "right";
 
-function speak(text: string) {
-  try {
-    const synth = window.speechSynthesis;
-    if (!synth) return;
-    synth.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
-    u.rate = SPEECH_RATE;
-    synth.speak(u);
-  } catch {}
-}
-
-// Clip URLs already resolved this session, keyed by "kind:word"
-const audioUrls = new Map<string, string>();
-
-// Play the ElevenLabs clip (generated on first use); fall back to the browser's TTS
-async function playAudio(word: Word, kind: AudioKind) {
-  const text = kind === "word" ? word.word : word.example;
-  if (!text) return;
-  const key = `${kind}:${word.word}`;
-  try {
-    let url = audioUrls.get(key);
-    if (!url) {
-      const res = await getAudio(word.word, kind);
-      if (!res.ok) throw new Error(res.error);
-      url = res.url;
-      audioUrls.set(key, url);
-    }
-    await new Audio(url).play();
-  } catch {
-    speak(text);
-  }
-}
-
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
-
-// Fisher–Yates shuffle, returns a new array
-function shuffle<T>(list: T[]): T[] {
-  const a = list.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
   const [setIdx, setSetIdx] = useState(0);
@@ -71,6 +27,8 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
   const [snap, setSnap] = useState(false);
   const [known, setKnown] = useState<number[]>([]);
   const [unknown, setUnknown] = useState<number[]>([]);
+  // Each new card stays locked behind the spelling popup until the word is spelled
+  const [locked, setLocked] = useState(true);
 
   const startX = useRef(0);
   const moved = useRef(false);
@@ -102,6 +60,7 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
       setDx(0);
       setFlipped(false);
       setLeaving(null);
+      setLocked(true);
       snapReset();
     }, 280);
   }
@@ -116,6 +75,7 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
     setLeaving(null);
     setKnown([]);
     setUnknown([]);
+    setLocked(true);
     snapReset();
   }
 
@@ -207,6 +167,13 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
 
       {!done ? (
         <>
+          {locked && (
+            <SpellModal
+              key={`${setIdx}:${pos}:${total}`}
+              word={word}
+              onUnlock={() => setLocked(false)}
+            />
+          )}
           {/* Card stack */}
           <div className="relative h-125 perspective-[1400px]">
             {pos + 1 < total && (

@@ -81,5 +81,98 @@
       { "word": "conflict", "ipa": "/ˈkɑːnflɪkt/", "readingTh": "คอน-ฟลิคท์", "meaning": "ความขัดแย้ง", "partOfSpeech": "noun", "example": "There was a conflict between the two groups.", "exampleTh": "เกิดความขัดแย้งระหว่างสองกลุ่ม" },
       { "word": "handle", "ipa": "/ˈhændəl/", "readingTh": "แฮน-เดิล", "meaning": "จัดการ / รับมือ", "partOfSpeech": "verb", "example": "She can handle the problem by herself.", "exampleTh": "เธอจัดการปัญหานี้ได้ด้วยตัวเอง" }
     ]
+  },
+  {
+    "index": 7,
+    "date": "2026-10-07",
+    "words": [
+      { "word": "gossip", "ipa": "/ˈɡɑːsɪp/", "readingTh": "กอส-ซิพ", "meaning": "นินทา / ซุบซิบ", "partOfSpeech": "verb", "example": "They like to gossip about their neighbors.", "exampleTh": "พวกเขาชอบนินทาเพื่อนบ้าน" },
+      { "word": "debt", "ipa": "/det/", "readingTh": "เด็ท", "meaning": "หนี้", "partOfSpeech": "noun", "example": "He paid off all his debt last year.", "exampleTh": "เขาใช้หนี้หมดแล้วเมื่อปีที่แล้ว" },
+      { "word": "election", "ipa": "/ɪˈlekʃən/", "readingTh": "อิ-เลค-ชั่น", "meaning": "การเลือกตั้ง", "partOfSpeech": "noun", "example": "The election will be held next month.", "exampleTh": "การเลือกตั้งจะจัดขึ้นเดือนหน้า" },
+      { "word": "instant", "ipa": "/ˈɪnstənt/", "readingTh": "อิน-สเตินท์", "meaning": "ทันที / สำเร็จรูป", "partOfSpeech": "adjective", "example": "I had instant noodles for lunch.", "exampleTh": "ฉันกินบะหมี่กึ่งสำเร็จรูปเป็นมื้อกลางวัน" },
+      { "word": "trouble", "ipa": "/ˈtrʌbəl/", "readingTh": "ทรับ-เบิล", "meaning": "ปัญหา / ความยุ่งยาก", "partOfSpeech": "noun", "example": "I had trouble finding your house.", "exampleTh": "ฉันหาบ้านของคุณเจอยากมาก" },
+      { "word": "loan", "ipa": "/loʊn/", "readingTh": "โลน", "meaning": "เงินกู้ / การให้ยืม", "partOfSpeech": "noun", "example": "She got a loan from the bank to buy a car.", "exampleTh": "เธอกู้เงินจากธนาคารเพื่อซื้อรถ" },
+      { "word": "pension", "ipa": "/ˈpenʃən/", "readingTh": "เพน-ชั่น", "meaning": "เงินบำนาญ", "partOfSpeech": "noun", "example": "My grandfather lives on his pension.", "exampleTh": "คุณปู่ใช้ชีวิตด้วยเงินบำนาญ" }
+    ]
+  },
+  {
+    "index": 8,
+    "date": "2026-10-08",
+    "words": [
+      { "word": "bring brought brought", "ipa": "/brɪŋ/", "readingTh": "บริง บรอท บรอท", "meaning": "นำมา / พามา", "partOfSpeech": "verb", "example": "Please bring your book tomorrow.", "exampleTh": "พรุ่งนี้กรุณานำหนังสือมาด้วย" },
+      { "word": "grab", "ipa": "/ɡræb/", "readingTh": "แกรบ", "meaning": "คว้า / หยิบฉวย", "partOfSpeech": "verb", "example": "Let's grab something to eat.", "exampleTh": "ไปหาอะไรกินกันเถอะ" },
+      { "word": "receive", "ipa": "/rɪˈsiːv/", "readingTh": "ริ-ซีฟว", "meaning": "ได้รับ", "partOfSpeech": "verb", "example": "I received your email this morning.", "exampleTh": "ฉันได้รับอีเมลของคุณเมื่อเช้านี้" },
+      { "word": "our", "ipa": "/aʊər/", "readingTh": "อาว-เออร์", "meaning": "ของพวกเรา", "partOfSpeech": "pronoun", "example": "This is our new house.", "exampleTh": "นี่คือบ้านใหม่ของพวกเรา" },
+      { "word": "literally", "ipa": "/ˈlɪtərəli/", "readingTh": "ลิท-เทอ-ระ-ลี่", "meaning": "ตามตัวอักษร / แบบจริงๆ เลย", "partOfSpeech": "adverb", "example": "I was literally shaking with fear.", "exampleTh": "ฉันตัวสั่นด้วยความกลัวจริงๆ เลย" },
+      { "word": "favorite", "ipa": "/ˈfeɪvərɪt/", "readingTh": "เฟ-เวอ-ริท", "meaning": "ที่ชื่นชอบที่สุด", "partOfSpeech": "adjective", "example": "Blue is my favorite color.", "exampleTh": "สีฟ้าเป็นสีที่ฉันชอบที่สุด" },
+      { "word": "lie", "ipa": "/laɪ/", "readingTh": "ไล", "meaning": "โกหก (ถ้าแปลว่า นอนลง: lie lay lain)", "partOfSpeech": "verb", "example": "He was lying about his age.", "exampleTh": "เขาโกหกเรื่องอายุของตัวเอง" }
+    ]
+  },
+  {
+    "index": 9,
+    "date": "2026-10-09",
+    "words": [
+      { "word": "probably", "ipa": "/ˈprɑːbəbli/", "readingTh": "พรอบ-บะ-บลี่", "meaning": "อาจจะ / น่าจะ", "partOfSpeech": "adverb", "example": "It will probably rain tonight.", "exampleTh": "คืนนี้ฝนน่าจะตก" },
+      { "word": "prior", "ipa": "/ˈpraɪər/", "readingTh": "ไพร-เออร์", "meaning": "ก่อนหน้า / ที่มีมาก่อน", "partOfSpeech": "adjective", "example": "No prior experience is needed for this job.", "exampleTh": "งานนี้ไม่ต้องมีประสบการณ์มาก่อน" },
+      { "word": "while", "ipa": "/waɪl/", "readingTh": "ไวล์", "meaning": "ขณะที่ / ในขณะที่", "partOfSpeech": "conjunction", "example": "I listen to music while I work.", "exampleTh": "ฉันฟังเพลงขณะที่ทำงาน" },
+      { "word": "passionate", "ipa": "/ˈpæʃənət/", "readingTh": "แพช-ชะ-เนิท", "meaning": "หลงใหล / มีความกระตือรือร้นมาก", "partOfSpeech": "adjective", "example": "She is passionate about cooking.", "exampleTh": "เธอหลงใหลในการทำอาหาร" },
+      { "word": "swear swore sworn", "ipa": "/swer/", "readingTh": "สแวร์ สวอร์ สวอร์น", "meaning": "สาบาน / สบถ", "partOfSpeech": "verb", "example": "I swear I will tell the truth.", "exampleTh": "ฉันสาบานว่าจะพูดความจริง" }
+    ]
+  },
+  {
+    "index": 10,
+    "date": "2026-10-10",
+    "words": [
+      { "word": "stove", "ipa": "/stoʊv/", "readingTh": "สโตฟว", "meaning": "เตา (หุงต้ม)", "partOfSpeech": "noun", "example": "The soup is cooking on the stove.", "exampleTh": "ซุปกำลังต้มอยู่บนเตา" },
+      { "word": "measure", "ipa": "/ˈmeʒər/", "readingTh": "เม-เชอร์", "meaning": "วัด / ตวง", "partOfSpeech": "verb", "example": "Please measure two cups of flour.", "exampleTh": "กรุณาตวงแป้งสองถ้วย" },
+      { "word": "pot", "ipa": "/pɑːt/", "readingTh": "พอท", "meaning": "หม้อ / กระถาง", "partOfSpeech": "noun", "example": "Put the rice in the pot.", "exampleTh": "ใส่ข้าวลงในหม้อ" },
+      { "word": "pour", "ipa": "/pɔːr/", "readingTh": "พอร์", "meaning": "เท / ริน", "partOfSpeech": "verb", "example": "Can you pour me some water?", "exampleTh": "ช่วยรินน้ำให้ฉันหน่อยได้ไหม" },
+      { "word": "ease", "ipa": "/iːz/", "readingTh": "อีซ", "meaning": "ความง่ายดาย / บรรเทา", "partOfSpeech": "noun", "example": "She passed the test with ease.", "exampleTh": "เธอสอบผ่านได้อย่างง่ายดาย" },
+      { "word": "lonely", "ipa": "/ˈloʊnli/", "readingTh": "โลน-ลี่", "meaning": "เหงา / โดดเดี่ยว", "partOfSpeech": "adjective", "example": "He feels lonely when he is at home alone.", "exampleTh": "เขารู้สึกเหงาเวลาอยู่บ้านคนเดียว" }
+    ]
+  },
+  {
+    "index": 11,
+    "date": "2026-10-11",
+    "words": [
+      { "word": "disease", "ipa": "/dɪˈziːz/", "readingTh": "ดิ-ซีซ", "meaning": "โรค", "partOfSpeech": "noun", "example": "Heart disease is a serious problem.", "exampleTh": "โรคหัวใจเป็นปัญหาร้ายแรง" },
+      { "word": "blood", "ipa": "/blʌd/", "readingTh": "บลัด", "meaning": "เลือด", "partOfSpeech": "noun", "example": "The nurse took a blood sample.", "exampleTh": "พยาบาลเจาะเลือดไปตรวจ" },
+      { "word": "previous", "ipa": "/ˈpriːviəs/", "readingTh": "พรี-เวียส", "meaning": "ก่อนหน้า / ที่ผ่านมา", "partOfSpeech": "adjective", "example": "I met him on my previous trip.", "exampleTh": "ฉันเจอเขาตอนเดินทางครั้งก่อน" },
+      { "word": "which", "ipa": "/wɪtʃ/", "readingTh": "วิช", "meaning": "อันไหน / ซึ่ง", "partOfSpeech": "pronoun", "example": "Which color do you like?", "exampleTh": "คุณชอบสีไหน" },
+      { "word": "confidence", "ipa": "/ˈkɑːnfɪdəns/", "readingTh": "คอน-ฟิ-เดินซ์", "meaning": "ความมั่นใจ", "partOfSpeech": "noun", "example": "She speaks English with confidence.", "exampleTh": "เธอพูดภาษาอังกฤษอย่างมั่นใจ" }
+    ]
+  },
+  {
+    "index": 12,
+    "date": "2026-10-16",
+    "words": [
+      { "word": "evaluation", "ipa": "/ɪˌvæljuˈeɪʃən/", "readingTh": "อิ-แวล-ลิว-เอ-ชั่น", "meaning": "การประเมิน", "partOfSpeech": "noun", "example": "Every employee gets an evaluation at the end of the year.", "exampleTh": "พนักงานทุกคนจะได้รับการประเมินตอนสิ้นปี" },
+      { "word": "raise", "ipa": "/reɪz/", "readingTh": "เรซ", "meaning": "ยกขึ้น / เพิ่ม (เงินเดือน, ราคา)", "partOfSpeech": "verb", "example": "Please raise your hand if you have a question.", "exampleTh": "ถ้ามีคำถามกรุณายกมือขึ้น" },
+      { "word": "deduct", "ipa": "/dɪˈdʌkt/", "readingTh": "ดิ-ดัคท์", "meaning": "หัก (เงิน) / ลบออก", "partOfSpeech": "verb", "example": "The company will deduct tax from your salary.", "exampleTh": "บริษัทจะหักภาษีจากเงินเดือนของคุณ" },
+      { "word": "lifetime", "ipa": "/ˈlaɪftaɪm/", "readingTh": "ไลฟ์-ไทม์", "meaning": "ชั่วชีวิต / ตลอดชีวิต", "partOfSpeech": "noun", "example": "This is a chance of a lifetime.", "exampleTh": "นี่เป็นโอกาสครั้งหนึ่งในชีวิต" },
+      { "word": "wage", "ipa": "/weɪdʒ/", "readingTh": "เวจ", "meaning": "ค่าจ้าง (รายวัน/รายชั่วโมง)", "partOfSpeech": "noun", "example": "The minimum wage will go up next year.", "exampleTh": "ค่าแรงขั้นต่ำจะขึ้นในปีหน้า" },
+      { "word": "retirement", "ipa": "/rɪˈtaɪərmənt/", "readingTh": "ริ-ไท-เออร์-เมินท์", "meaning": "การเกษียณอายุ", "partOfSpeech": "noun", "example": "My father is saving money for his retirement.", "exampleTh": "พ่อของฉันกำลังเก็บเงินไว้ใช้ตอนเกษียณ" }
+    ]
+  },
+  {
+    "index": 13,
+    "date": "2026-10-19",
+    "words": [
+      { "word": "productively", "ipa": "/prəˈdʌktɪvli/", "readingTh": "พระ-ดัค-ทิฟว-ลี่", "meaning": "อย่างมีประสิทธิภาพ / อย่างได้ผล", "partOfSpeech": "adverb", "example": "He uses his time productively.", "exampleTh": "เขาใช้เวลาอย่างมีประสิทธิภาพ" },
+      { "word": "participate", "ipa": "/pɑːrˈtɪsɪpeɪt/", "readingTh": "พาร์-ทิส-ซิ-เพท", "meaning": "เข้าร่วม / มีส่วนร่วม", "partOfSpeech": "verb", "example": "All students must participate in the class activity.", "exampleTh": "นักเรียนทุกคนต้องเข้าร่วมกิจกรรมในห้องเรียน" },
+      { "word": "expert", "ipa": "/ˈekspɜːrt/", "readingTh": "เอค-สเพิร์ท", "meaning": "ผู้เชี่ยวชาญ", "partOfSpeech": "noun", "example": "She is an expert in computer science.", "exampleTh": "เธอเป็นผู้เชี่ยวชาญด้านวิทยาการคอมพิวเตอร์" },
+      { "word": "expect", "ipa": "/ɪkˈspekt/", "readingTh": "อิค-สเปคท์", "meaning": "คาดหวัง / คาดว่า", "partOfSpeech": "verb", "example": "I expect to finish the work by Friday.", "exampleTh": "ฉันคาดว่าจะทำงานเสร็จภายในวันศุกร์" }
+    ]
+  },
+  {
+    "index": 14,
+    "date": "2026-10-28",
+    "words": [
+      { "word": "practice", "ipa": "/ˈpræktɪs/", "readingTh": "แพรค-ทิส", "meaning": "ฝึกฝน / การฝึกซ้อม", "partOfSpeech": "verb", "example": "I practice English every day.", "exampleTh": "ฉันฝึกภาษาอังกฤษทุกวัน" },
+      { "word": "security", "ipa": "/sɪˈkjʊrəti/", "readingTh": "ซิ-เคียว-ริ-ตี้", "meaning": "ความปลอดภัย / การรักษาความปลอดภัย", "partOfSpeech": "noun", "example": "The airport has tight security.", "exampleTh": "สนามบินมีการรักษาความปลอดภัยที่เข้มงวด" },
+      { "word": "consideration", "ipa": "/kənˌsɪdəˈreɪʃən/", "readingTh": "คัน-ซิด-เดอะ-เร-ชั่น", "meaning": "การพิจารณา / ความเกรงใจ", "partOfSpeech": "noun", "example": "After careful consideration, we chose the cheaper plan.", "exampleTh": "หลังจากพิจารณาอย่างรอบคอบ เราเลือกแผนที่ถูกกว่า" },
+      { "word": "notable", "ipa": "/ˈnoʊtəbəl/", "readingTh": "โน-เท-เบิล", "meaning": "น่าสังเกต / โดดเด่น", "partOfSpeech": "adjective", "example": "There is a notable difference between the two products.", "exampleTh": "สินค้าสองชิ้นนี้มีความแตกต่างที่เห็นได้ชัด" },
+      { "word": "describe", "ipa": "/dɪˈskraɪb/", "readingTh": "ดิ-สไครบ์", "meaning": "บรรยาย / อธิบายลักษณะ", "partOfSpeech": "verb", "example": "Can you describe the man you saw?", "exampleTh": "คุณช่วยบรรยายลักษณะผู้ชายที่คุณเห็นได้ไหม" }
+    ]
   }
 ]
