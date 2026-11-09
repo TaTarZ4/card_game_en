@@ -5,6 +5,8 @@ import { partOfSpeechTh } from "@/lib/part-of-speech";
 import { playAudio, shuffle } from "@/lib/play-audio";
 import SpellModal from "@/components/SpellModal";
 import type { ReviewSet } from "@/lib/words";
+import { addResult, getStat, statKey, type WordStats } from "@/lib/word-stats";
+import { getWordStats, recordWordResult } from "@/app/actions";
 
 const SWIPE_THRESHOLD = 110;
 
@@ -29,12 +31,27 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
   const [unknown, setUnknown] = useState<number[]>([]);
   // Each new card stays locked behind the spelling popup until the word is spelled
   const [locked, setLocked] = useState(true);
+  // Lifetime remembered / not-remembered counts per word, stored in data/word-stats.json on the server
+  const [stats, setStats] = useState<WordStats>({});
 
   const startX = useRef(0);
   const moved = useRef(false);
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => () => clearTimeout(timer.current), []);
+
+  useEffect(() => {
+    let alive = true;
+    getWordStats()
+      .then((loaded) => {
+        // Keep any swipes made while loading on top of the saved counts
+        if (alive) setStats((local) => ({ ...loaded, ...local }));
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   const total = order.length;
   const done = pos >= total;
@@ -53,6 +70,15 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
     setDx(dir === "right" ? 560 : -560);
     clearTimeout(timer.current);
     const id = order[pos];
+    const w = words[id].word;
+    const isKnown = dir === "right";
+    // Update the screen right away, then sync with the count the server saved
+    setStats((s) => addResult(s, w, isKnown));
+    recordWordResult(w, isKnown)
+      .then((saved) => {
+        if (saved) setStats((s) => ({ ...s, [statKey(w)]: saved }));
+      })
+      .catch(() => {});
     timer.current = setTimeout(() => {
       if (dir === "right") setKnown((k) => [...k, id]);
       else setUnknown((u) => [...u, id]);
@@ -127,6 +153,7 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
   const clamp = (v: number) => Math.max(0, Math.min(1, v));
   const pct = total ? Math.round((pos / total) * 100) : 0;
   const posTh = partOfSpeechTh[word.partOfSpeech];
+  const stat = getStat(stats, word.word);
 
   return (
     <div className="flex w-full max-w-105 flex-col gap-4.5 overflow-hidden px-6 pt-7 pb-8">
@@ -251,8 +278,14 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
                       <div className="text-[17px] leading-normal">“{word.example}”</div>
                     </div>
                   )}
-                  <div className="mt-3.5 text-center text-[13px] text-muted">
-                    แตะการ์ด หรือกดปุ่มพลิก เพื่อดูเฉลย
+                  <div className="mt-3.5 flex items-center justify-between gap-2 text-[13px] text-muted">
+                    <span>
+                      <span className="font-semibold text-known-ink">จำได้ {stat.known}</span>
+                      {" · "}
+                      <span className="font-semibold text-unknown-ink">ยังไม่จำ {stat.unknown}</span>
+                      {" ครั้ง"}
+                    </span>
+                    <span>แตะการ์ดเพื่อดูเฉลย</span>
                   </div>
                 </div>
 
@@ -376,7 +409,13 @@ export default function Flashcards({ sets }: { sets: ReviewSet[] }) {
                   className="flex items-baseline justify-between gap-3 rounded-xl bg-panel px-3.5 py-2.5"
                 >
                   <span className="font-serif text-lg font-bold">{words[i].word}</span>
-                  <span className="text-right text-[15px] text-subtle">{words[i].meaning}</span>
+                  <span className="flex flex-col items-end text-right">
+                    <span className="text-[15px] text-subtle">{words[i].meaning}</span>
+                    <span className="text-xs text-muted">
+                      จำได้ {getStat(stats, words[i].word).known} · ยังไม่จำ{" "}
+                      {getStat(stats, words[i].word).unknown}
+                    </span>
+                  </span>
                 </div>
               ))}
             </div>
@@ -485,12 +524,10 @@ function CopyButton({ text, className }: { text: string; className: string }) {
 
   async function copy(e: React.MouseEvent) {
     e.stopPropagation();
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      clearTimeout(timer.current);
-      timer.current = setTimeout(() => setCopied(false), 1500);
-    } catch {}
+    if (!(await copyText(text))) return;
+    setCopied(true);
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => setCopied(false), 1500);
   }
 
   return (
@@ -507,4 +544,33 @@ function CopyButton({ text, className }: { text: string; className: string }) {
       />
     </button>
   );
+}
+
+// navigator.clipboard only exists in a secure context (https or localhost).
+// Over plain http on a LAN IP (e.g. http://172.26.240.1:3000) it is undefined,
+// so fall back to the legacy execCommand("copy") with a hidden textarea.
+async function copyText(text: string): Promise<boolean> {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch {}
+  try {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.top = "0";
+    ta.style.left = "0";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    ta.setSelectionRange(0, text.length);
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  } catch {
+    return false;
+  }
 }

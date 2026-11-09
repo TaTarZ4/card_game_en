@@ -1,7 +1,10 @@
 "use server";
 
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 import { ensureAudio } from "@/lib/tts";
 import { findWord } from "@/lib/words";
+import { addResult, getStat, type WordStat, type WordStats } from "@/lib/word-stats";
 
 export type AudioKind = "word" | "example";
 
@@ -31,4 +34,44 @@ const AUDIO_BASE = "/audio/chisa2";
 function audioUrlFor(word: string, kind: AudioKind): string {
   const slug = word.toLowerCase().trim().replace(/\s+/g, "-");
   return `${AUDIO_BASE}/${slug}${kind === "example" ? "-example" : ""}.mp3`;
+}
+
+// ---- Word stats: how many times each word was swiped "known" / "not yet" ----
+// Kept outside src/ so writing it doesn't trigger a dev-server reload.
+const STATS_FILE = path.join(process.cwd(), "data", "word-stats.json");
+
+async function readStats(): Promise<WordStats> {
+  try {
+    const parsed = JSON.parse(await readFile(STATS_FILE, "utf8"));
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {}; // missing or unreadable file = no stats yet
+  }
+}
+
+// Writes go through one queue so two quick swipes can't overwrite each other
+let writeQueue: Promise<unknown> = Promise.resolve();
+
+export async function getWordStats(): Promise<WordStats> {
+  await writeQueue;
+  return readStats();
+}
+
+export async function recordWordResult(word: string, known: boolean): Promise<WordStat | null> {
+  const entry = findWord(word);
+  if (!entry || typeof known !== "boolean") return null;
+
+  const task = writeQueue.then(async () => {
+    const stats = addResult(await readStats(), entry.word, known);
+    await mkdir(path.dirname(STATS_FILE), { recursive: true });
+    await writeFile(STATS_FILE, JSON.stringify(stats, null, 2) + "\n", "utf8");
+    return getStat(stats, entry.word);
+  });
+  writeQueue = task.catch(() => {});
+  try {
+    return await task;
+  } catch (e) {
+    console.error("recordWordResult failed:", e);
+    return null;
+  }
 }

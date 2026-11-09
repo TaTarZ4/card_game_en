@@ -184,6 +184,18 @@ export default function SpellModal({ word, onUnlock }: { word: Word; onUnlock: (
               ยอมแพ้
             </button>
           )}
+          {gaveUp && !unlocked && (
+            <button
+              type="button"
+              onClick={() => {
+                clearTimeout(timer.current);
+                onUnlock();
+              }}
+              className="h-13 rounded-full border-2 border-line-strong text-base font-semibold text-muted"
+            >
+              ข้าม
+            </button>
+          )}
         </div>
       </form>
     </div>

@@ -1,0 +1,54 @@
+{
+  "consume": {
+    "known": 1,
+    "unknown": 0
+  },
+  "ingredient": {
+    "known": 1,
+    "unknown": 0
+  },
+  "toaster": {
+    "known": 1,
+    "unknown": 1
+  },
+  "elaborate": {
+    "known": 1,
+    "unknown": 1
+  },
+  "confident": {
+    "known": 1,
+    "unknown": 1
+  },
+  "skinny": {
+    "known": 1,
+    "unknown": 0
+  },
+  "academic": {
+    "known": 1,
+    "unknown": 2
+  },
+  "taste": {
+    "known": 1,
+    "unknown": 0
+  },
+  "shower": {
+    "known": 1,
+    "unknown": 0
+  },
+  "immediately": {
+    "known": 1,
+    "unknown": 2
+  },
+  "toast": {
+    "known": 1,
+    "unknown": 1
+  },
+  "delicious": {
+    "known": 1,
+    "unknown": 0
+  },
+  "productively": {
+    "known": 1,
+    "unknown": 0
+  }
+}

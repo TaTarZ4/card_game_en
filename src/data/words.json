@@ -174,5 +174,35 @@
       { "word": "notable", "ipa": "/ˈnoʊtəbəl/", "readingTh": "โน-เท-เบิล", "meaning": "น่าสังเกต / โดดเด่น", "partOfSpeech": "adjective", "example": "There is a notable difference between the two products.", "exampleTh": "สินค้าสองชิ้นนี้มีความแตกต่างที่เห็นได้ชัด" },
       { "word": "describe", "ipa": "/dɪˈskraɪb/", "readingTh": "ดิ-สไครบ์", "meaning": "บรรยาย / อธิบายลักษณะ", "partOfSpeech": "verb", "example": "Can you describe the man you saw?", "exampleTh": "คุณช่วยบรรยายลักษณะผู้ชายที่คุณเห็นได้ไหม" }
     ]
+  },
+  {
+    "index": 15,
+    "date": "2026-11-03",
+    "words": [
+      { "word": "immediately", "ipa": "/ɪˈmiːdiətli/", "readingTh": "อิ-มี-เดียท-ลี่", "meaning": "ทันที", "partOfSpeech": "adverb", "example": "Please call me immediately when you arrive.", "exampleTh": "ช่วยโทรหาฉันทันทีที่คุณมาถึง" },
+      { "word": "shower", "ipa": "/ˈʃaʊər/", "readingTh": "ชาว-เออร์", "meaning": "การอาบน้ำ (ฝักบัว) / ฝนตกปรอย ๆ", "partOfSpeech": "noun", "example": "I take a shower every morning.", "exampleTh": "ฉันอาบน้ำทุกเช้า" },
+      { "word": "toast", "ipa": "/toʊst/", "readingTh": "โทสท์", "meaning": "ขนมปังปิ้ง / การดื่มอวยพร", "partOfSpeech": "noun", "example": "I had toast and eggs for breakfast.", "exampleTh": "ฉันกินขนมปังปิ้งกับไข่เป็นอาหารเช้า" },
+      { "word": "delicious", "ipa": "/dɪˈlɪʃəs/", "readingTh": "ดิ-ลิช-เชิส", "meaning": "อร่อย", "partOfSpeech": "adjective", "example": "This soup is delicious.", "exampleTh": "ซุปนี้อร่อยมาก" },
+      { "word": "taste", "ipa": "/teɪst/", "readingTh": "เทสท์", "meaning": "มีรสชาติ / ชิม / รสชาติ", "partOfSpeech": "verb", "example": "This cake tastes sweet.", "exampleTh": "เค้กนี้มีรสหวาน" }
+    ]
+  },
+  {
+    "index": 16,
+    "date": "2026-11-05",
+    "words": [
+      { "word": "academic", "ipa": "/ˌækəˈdemɪk/", "readingTh": "แอค-คะ-เดม-มิค", "meaning": "เกี่ยวกับการศึกษา / ทางวิชาการ", "partOfSpeech": "adjective", "example": "She has a strong academic record.", "exampleTh": "เธอมีผลการเรียนที่ดีมาก" },
+      { "word": "elaborate", "ipa": "/ɪˈlæbəreɪt/", "readingTh": "อิ-แลบ-เบอะ-เรท", "meaning": "อธิบายเพิ่มเติม / ขยายความ", "partOfSpeech": "verb", "example": "Could you elaborate on your idea?", "exampleTh": "คุณช่วยอธิบายไอเดียของคุณเพิ่มเติมได้ไหม" },
+      { "word": "skinny", "ipa": "/ˈskɪni/", "readingTh": "สกิน-นี่", "meaning": "ผอมมาก", "partOfSpeech": "adjective", "example": "He was very skinny when he was a child.", "exampleTh": "ตอนเด็ก ๆ เขาผอมมาก" },
+      { "word": "confident", "ipa": "/ˈkɑːnfɪdənt/", "readingTh": "คอน-ฟิ-เดินท์", "meaning": "มั่นใจ", "partOfSpeech": "adjective", "example": "I am confident that we will win.", "exampleTh": "ฉันมั่นใจว่าเราจะชนะ" }
+    ]
+  },
+  {
+    "index": 17,
+    "date": "2026-11-09",
+    "words": [
+      { "word": "consume", "ipa": "/kənˈsuːm/", "readingTh": "คัน-ซูม", "meaning": "บริโภค / ใช้ (เวลา พลังงาน)", "partOfSpeech": "verb", "example": "This old car consumes a lot of fuel.", "exampleTh": "รถเก่าคันนี้กินน้ำมันมาก" },
+      { "word": "ingredient", "ipa": "/ɪnˈɡriːdiənt/", "readingTh": "อิน-กรี-เดียนท์", "meaning": "ส่วนผสม / วัตถุดิบ", "partOfSpeech": "noun", "example": "Mix all the ingredients in a bowl.", "exampleTh": "ผสมส่วนผสมทั้งหมดในชาม" },
+      { "word": "toaster", "ipa": "/ˈtoʊstər/", "readingTh": "โทส-เตอร์", "meaning": "เครื่องปิ้งขนมปัง", "partOfSpeech": "noun", "example": "Put the bread in the toaster.", "exampleTh": "ใส่ขนมปังลงในเครื่องปิ้งขนมปัง" }
+    ]
   }
 ]
